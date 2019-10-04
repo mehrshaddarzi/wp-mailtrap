@@ -1,5 +1,5 @@
-# wp-mailtrap
-Use Mailtrap.io Service For Test Email in WordPress
+# WP-Mailtrap
+Use [Mailtrap.io](https://Mailtrap.io) Service For Test Email in WordPress
 
 ## Setup
 
