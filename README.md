@@ -3,7 +3,7 @@ Use Mailtrap.io Service For Test Email in WordPress
 
 ## Setup
 
-Fist download Plugin and install in WordPress:
+First download Plugin and install in WordPress:
 
 > https://github.com/mehrshaddarzi/wp-mailtrap/releases/download/v1.0.0/wp-mailtrap.zip
 
