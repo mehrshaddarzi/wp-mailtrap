@@ -7,7 +7,7 @@ Author: Mehrshad Darzi
 Version: 500.0
 Author URI: https://realwp.net
 */
-function mailtrap( $phpmailer ) {
+function wp_mailtrap( $phpmailer ) {
 	$phpmailer->isSMTP();
 	$phpmailer->Host     = 'smtp.mailtrap.io';
 	$phpmailer->SMTPAuth = true;
@@ -20,5 +20,5 @@ function mailtrap( $phpmailer ) {
 // in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) and 
 
 if ( defined('MAILTRAP_USERNAME') and defined('MAILTRAP_PASSWORD') ) {
-	add_action( 'phpmailer_init', 'mailtrap' );
+	add_action( 'phpmailer_init', 'wp_mailtrap', 99 );
 }
