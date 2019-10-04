@@ -16,6 +16,6 @@ function mailtrap( $phpmailer ) {
 	$phpmailer->Password = MAILTRAP_PASSWORD;
 }
 
-if ( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) and defined('MAILTRAP_USERNAME') and defined('MAILTRAP_PASSWORD')) { ) {
+if ( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) and defined('MAILTRAP_USERNAME') and defined('MAILTRAP_PASSWORD') ) {
 	add_action( 'phpmailer_init', 'mailtrap' );
 }
